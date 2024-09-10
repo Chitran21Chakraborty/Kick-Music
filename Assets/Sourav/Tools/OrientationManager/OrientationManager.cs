@@ -88,7 +88,7 @@ namespace Sourav.Tools.OrientationManager
             }
 #else
             //LANDSCAPE
-            if (Screen.orientation == ScreenOrientation.LandscapeLeft ||
+            if (Screen.orientation == ScreenOrientation.Landscape ||
                Screen.orientation == ScreenOrientation.LandscapeLeft ||
                Screen.orientation == ScreenOrientation.LandscapeRight)
             {

@@ -50,11 +50,11 @@ namespace Sourav.Utilities.Scripts.DrawLineRelated
 		
         #region START STOP EXTERNAL
         
-#if ODIN_INSPECTOR
-        [Sirenix.OdinInspector.Button()]
-#else
-        [Sourav.Utilities.Scripts.Attributes.Button()]
-#endif
+// #if ODIN_INSPECTOR
+        // [Sirenix.OdinInspector.Button()]
+// #else
+        // [Sourav.Utilities.Scripts.Attributes.Button()]
+// #endif
         private void StartDrawingExternal()
         {
             if (point1 == null || point2 == null)
@@ -67,11 +67,11 @@ namespace Sourav.Utilities.Scripts.DrawLineRelated
             }
         }
 
-#if ODIN_INSPECTOR
-        [Sirenix.OdinInspector.Button()]
-#else
-        [Sourav.Utilities.Scripts.Attributes.Button()]
-#endif
+// #if ODIN_INSPECTOR
+//         [Sirenix.OdinInspector.Button()]
+// #else
+//         [Sourav.Utilities.Scripts.Attributes.Button()]
+// #endif
         private void StopDrawingExternal()
         {
             StopDrawing();

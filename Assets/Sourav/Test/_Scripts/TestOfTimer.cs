@@ -9,7 +9,7 @@ namespace Sourav.Test._Scripts
     {
         [SerializeField] private TimerInfo info;
         
-        [Sirenix.OdinInspector.Button("UNSCALED")]
+        // [Sirenix.OdinInspector.Button("UNSCALED")]
         public void StartUnscaledTimer()
         {
             TimerWatch watch = new TimerWatch();
@@ -22,7 +22,7 @@ namespace Sourav.Test._Scripts
             App.GetCoroutineHandler().StartTimer(watch: watch, info: infoCurrent);
         }
         
-        [Sirenix.OdinInspector.Button("SCALED")]
+        // [Sirenix.OdinInspector.Button("SCALED")]
         public void StartScaledTimer()
         {
             TimerWatch watch = new TimerWatch();
@@ -35,35 +35,35 @@ namespace Sourav.Test._Scripts
             App.GetCoroutineHandler().StartTimer(watch: watch, info: infoCurrent);
         }
 
-        [Sirenix.OdinInspector.Button("PAUSE")]
+        // [Sirenix.OdinInspector.Button("PAUSE")]
         public void PauseTimer(string id)
         {
             App.GetCoroutineHandler().GetTimer(id)?.PauseTimer();
         }
-        [Sirenix.OdinInspector.Button("RESUME")]
+        // [Sirenix.OdinInspector.Button("RESUME")]
         public void ResumeTimer(string id)
         {
             App.GetCoroutineHandler().GetTimer(id)?.ResumeTimer();
         }
-        [Sirenix.OdinInspector.Button("STOP")]
+        // [Sirenix.OdinInspector.Button("STOP")]
         public void StopTimer(string id, bool invokeEndAction)
         {
             App.GetCoroutineHandler().GetTimer(id)?.StopTimer(invokeEndAction);
         }
 
-        [Sirenix.OdinInspector.Button()]
+        // [Sirenix.OdinInspector.Button()]
         public void FreezeTime()
         {
             Time.timeScale = 0;
         }
         
-        [Sirenix.OdinInspector.Button()]
+        // [Sirenix.OdinInspector.Button()]
         public void UnFreezeTime()
         {
             Time.timeScale = 1;
         }
 
-        [Sirenix.OdinInspector.Button()]
+        // [Sirenix.OdinInspector.Button()]
         public void ExampleOfWait()
         {
             Debug.Log("This is before wait");

@@ -1,4 +1,4 @@
-﻿using Sirenix.OdinInspector;
+﻿// using Sirenix.OdinInspector;
 using Sourav.Engine.Core.DebugRelated;
 using Sourav.Engine.Core.GameElementRelated;
 using UnityEngine;
@@ -12,9 +12,9 @@ namespace Sourav.UIPresets.StageViewRelated
         [SerializeField] private Image fillImage;
         [SerializeField] private ToggleSwitch[] levels;
         
-        [ReadOnly][SerializeField] private float incrementPerLevel;
-        [ReadOnly][SerializeField] private float levelIncrement;
-        [ReadOnly][SerializeField] private float currentIncrement;
+        [SerializeField] private float incrementPerLevel;
+        [SerializeField] private float levelIncrement;
+        [SerializeField] private float currentIncrement;
         #endregion
 
         #region METHODS

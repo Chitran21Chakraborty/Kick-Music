@@ -1,4 +1,4 @@
-﻿using Sirenix.OdinInspector;
+﻿// using Sirenix.OdinInspector;
 using Sourav.Engine.Core.GameElementRelated;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,24 +10,17 @@ namespace Sourav.UIPresets
     {
         [SerializeField] private bool isChangeImage;
         [SerializeField] private bool isMoveDownPosition;
-        [ShowIf("isMoveDownPosition", true)][SerializeField] 
-        private GameObject pushDownObject;
-        [ShowIf("isMoveDownPosition", true)][SerializeField] 
-        private Vector3 onPointerDownPosition;
-        [ShowIf("isMoveDownPosition", true)][SerializeField] 
-        private Vector3 onPointerUpPosition;
-        [ShowIf("isMoveDownPosition", true)][SerializeField] 
-        private bool isLocal;
+        [SerializeField] private GameObject pushDownObject;
+        [SerializeField] private Vector3 onPointerDownPosition;
+        [SerializeField] private Vector3 onPointerUpPosition;
+        [SerializeField] private bool isLocal;
 
-        [ShowIf("isChangeImage", true)] [SerializeField]
-        private Image image;
-        [ShowIf("isChangeImage", true)] [SerializeField]
-        private Sprite pressUpImage;
-        [ShowIf("isChangeImage", true)] [SerializeField]
-        private Sprite pressDownImage;
+        [SerializeField] private Image image;
+        [SerializeField] private Sprite pressUpImage;
+        [SerializeField] private Sprite pressDownImage;
 
-        [ShowIf("isMoveDownPosition", true)]
-        [Button()]
+        // [ShowIf("isMoveDownPosition", true)]
+        // [Button()]
         private void SetPositionDown()
         {
             if (isLocal)
@@ -40,8 +33,8 @@ namespace Sourav.UIPresets
             }
         }
         
-        [ShowIf("isMoveDownPosition", true)]
-        [Button()]
+        // [ShowIf("isMoveDownPosition", true)]
+        // [Button()]
         private void SetPositionUp()
         {
             if (isLocal)
@@ -54,8 +47,8 @@ namespace Sourav.UIPresets
             }
         }
 
-        [ShowIf("isMoveDownPosition", true)]
-        [Button()]
+        // [ShowIf("isMoveDownPosition", true)]
+        // [Button()]
         private void SetDefault()
         {
             if (isLocal)
